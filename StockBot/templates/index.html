@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stockbot: AI Chat with Brave Search</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="/static/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Stockbot: AI Chat with Brave Search</h1>
+    </header>
+    <main id="app-container">
+        <section id="user-input-column" class="column">
+            <h2>Your Input</h2>
+            <form id="user-input-form">
+                <input type="text" id="user-question" placeholder="Ask about a stock...">
+                <textarea id="user-comments" placeholder="Additional comments..."></textarea>
+                <button type="submit" id="send-button">Send</button>
+            </form>
+        </section>
+        
+        <section id="ai-response-column" class="column">
+            <h2>AI Response</h2>
+            <div class="response-container">
+                <div class="response-section">
+                    <h3>Summary</h3>
+                    <div id="ai-summary" class="response-content"></div>
+                </div>
+                <div class="response-section">
+                    <h3>Detailed Analysis</h3>
+                    <div id="ai-analysis" class="response-content"></div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="combined-analysis-column" class="column">
+            <h2>Combined Analysis</h2>
+            <div class="response-container">
+                <div class="response-section">
+                    <h3>Summary</h3>
+                    <div id="combined-summary" class="response-content"></div>
+                </div>
+                <div class="response-section">
+                    <h3>Detailed Analysis</h3>
+                    <div id="combined-analysis" class="response-content"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Stockbot. All rights reserved.</p>
+    </footer>
+    <div id="loading-spinner" class="hidden">
+        <div class="spinner"></div>
+    </div>
+</body>
+</html>
